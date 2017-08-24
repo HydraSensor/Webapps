@@ -1,5 +1,5 @@
 <?php
-require_once('../../db/db.php');
+require_once('../../class/db/DB.php');
 require_once('../../class/session/session.php');
 $objetoSession = new Session('1,2,3,4,5,6',false,$array = array("idMenu" => "inicio,bien")); // 1,4
 ?>

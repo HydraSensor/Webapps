@@ -1,5 +1,5 @@
 <?php
-require_once('../db/db.php');
+require_once('../class/db/DB.php');
 require_once('../class/session/session.php');
 $objetoSession = new Session('1,2,3,4,5,6',false,$array = array("idMenu" => "inicio,bien")); // 1,4
 ?>
@@ -269,7 +269,7 @@ $objetoSession = new Session('1,2,3,4,5,6',false,$array = array("idMenu" => "ini
                                             <li class="bg-gray">
                                                 <a class="media" href="#">
                                                     <div class="media-left">
-                                                        <img class="img-circle img-sm" alt="Profile Picture" src="img/profile-photos/9.png">
+                                                        <img class="img-circle img-sm" alt="Profile Picture" src="../img/profile-photos/9.png">
                                                     </div>
                                                     <div class="media-body">
                                                         <div class="text-nowrap">Lucy sent you a message</div>
@@ -282,7 +282,7 @@ $objetoSession = new Session('1,2,3,4,5,6',false,$array = array("idMenu" => "ini
                                             <li class="bg-gray">
                                                 <a class="media" href="#">
                                                     <div class="media-left">
-                                                        <img class="img-circle img-sm" alt="Profile Picture" src="img/profile-photos/3.png">
+                                                        <img class="img-circle img-sm" alt="Profile Picture" src="../img/profile-photos/3.png">
                                                     </div>
                                                     <div class="media-body">
                                                         <div class="text-nowrap">Jackson sent you a message</div>

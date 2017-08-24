@@ -1,10 +1,10 @@
 <?php
 if (file_exists("../../class/menu/menu.php")){
   $clase1 = "../../class/menu/menu.php";
-  $clase2 = "../../db/class.db.php";
+  $clase2 = "../../class/db/DB.php";
 }else{
   $clase1 = "../class/menu/menu.php";
-  $clase2 = "../db/class.db.php";
+  $clase2 = "../class/db/DB.php";
 }
 
 require_once $clase1;

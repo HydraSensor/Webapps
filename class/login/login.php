@@ -1,9 +1,9 @@
 <?php
 class Login{
     public function Acceso($user,$pass){
-        $database = new DB();
+        $db = new Db();
         $q = "SELECT id FROM users WHERE username = '$user'";
-        $select = $database->get_results($q);
+        $select =  $db -> select($q);
         $user = '';
         foreach($select as $sel){
             $user = $sel['id'];

@@ -12,7 +12,7 @@ class Menu
   // los nodos padres se mostraran solo si al menos uno de los hijos es visible
   public function crearMenu()
   {
-    $db = new DB();
+    $db = new Db();
 
     echo "<script <script src='../plugins/push.js/push.min.js'></script>></script>
     <!--MAIN NAVIGATION-->
@@ -161,9 +161,9 @@ class Menu
 
   public function consultaMenu($idPadre)
   {
-    $db = new DB();
+    $db = new Db();
     $q = "SELECT * FROM menu WHERE padre = '".$idPadre."' order by prioridad";
-    $resultado = $db->get_results($q);
+    $resultado = $db->select($q);
     return $resultado;
   }
 

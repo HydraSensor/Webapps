@@ -14,12 +14,13 @@ $(document).ready(function(){
                   alert("Acceso denegado");
                 }else{
                   window.location.href=data;
+                  //alert("entrooo");
                 }
 
 
             },
             error: function(response){
-              alert(response);
+              alert('errorrrr');
               console.log(response);
             }
         });

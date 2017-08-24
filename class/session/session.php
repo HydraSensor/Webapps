@@ -20,10 +20,10 @@ class Session{
       session_unset();
       $this->destruirSession();
     }
-    public function Acceso($user,$pass){
-        $database = new DB();
+    public function Acceso($user,$pass){       
+        $db = new Db();
         $q = "SELECT id_usuarios, cliente, email FROM usuarios WHERE usuario = '$user' and password = '$pass'";
-        $select = $database->get_results($q);
+        $select = $db -> select($q);
         $user = '';
         foreach($select as $sel){
             $user = $sel['id_usuarios'];
