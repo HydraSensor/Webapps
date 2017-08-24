@@ -4,14 +4,23 @@ $(document).ready(function(){
         var pass = $("#password").val();
         $.ajax({
             type: "POST",
-            url: "includes/login/login.php",
+            url: "includes/session/session.php",
             data: { user : user , pass : pass },
             dataType: "html",
             success: function(data){
-                alert(data);
-                
+              console.log(data);
+
+                if (data == 1){
+                  alert("Acceso denegado");
+                }else{
+                  window.location.href=data;
+                }
+
+
             },
-            error: function(){
+            error: function(response){
+              alert(response);
+              console.log(response);
             }
         });
     })
